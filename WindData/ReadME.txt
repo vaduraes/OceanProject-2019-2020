@@ -52,3 +52,15 @@ Outputs:
 #.png geo plot showing the CF for the wind resource
 
 
+
+
+#DATA NOT PROVIDED ON GITHUB:
+#windspeed_100m.npz> Raw data with wind speeds from NREL, >2GB. (We provided code so you can obtain this data by yourself)
+#WindSpeedNREL_100m.npz> Data with wind speeds from NREL only in the feasible site locations, >0.8GB. (We provided code so you can obtain this data by yourself)
+#WindEnergyNREL_100m_ERGIS.npz> Data with energy generated in each feasible location, >0.4GB. (We provided code so you can obtain this data by yourself)
+
+
+
+
+
+
