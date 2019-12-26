@@ -77,8 +77,9 @@ Inputs:
 #OptimalPortfolioFile> The results from the portfolio optimization
 #IndexOfInterest> Index from the feasible CF0 simulation that you whant the plot (Choose index based on CfFeasible)
 
-Output:
-#1) A geo plot for wind, wave, and ocean current separately showing the CF in all site locations and the location of the optimal sites.
-#2) A geo plot with the optimal site locations for wind wave and ocean together. (Here we only show the optimal site locaitons)
 
+
+
+#DATA NOT PROVIDED ON GITHUB:
+#WindEnergyNREL_100m_ERGIS.npz> Data with wind energy generated in each feasible location, >0.4GB. (We provided code so you can obtain this data by yourself)
 
