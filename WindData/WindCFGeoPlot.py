@@ -10,13 +10,13 @@ import matplotlib.pyplot as plt
 ShapeFileCoast="./GEOData/ne_10m_coastline.shp"
 ShapeFileStates="./GEOData/ne_10m_admin_1_states_provinces_lines.shp"
 
-HourData=np.load('WindEnergyNREL_100m_ERGIS.npz')#Energy Data
+HourlyData=np.load('WindEnergyNREL_100m_ERGIS.npz')#Energy Data
 
-HourWindEnergy=HourData["WindEnergy"]
+HourlyWindEnergy=HourlyData["WindEnergy"]
 
-AvgWindEnergy=np.average(HourWindEnergy,axis=1)
+AvgWindEnergy=np.average(HourlyWindEnergy,axis=1)
 
-LatLong=HourData["LatLong"]
+LatLong=HourlyData["LatLong"]
 
 
 min_longitude=-78.7

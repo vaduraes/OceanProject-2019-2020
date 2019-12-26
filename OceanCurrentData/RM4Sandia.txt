@@ -2,7 +2,8 @@ Turbine model RM4 from Sandia; acess in https://energy.sandia.gov/energy/renewab
 Power equation from- 2.3.1.1 Performance Analysis and AEP Estimation, of the reference above
 
 Rotor Depth [m], 50
-Capacity per turbines [W], 1e6
+Number of turbines per set, 4
+Capacity per set of turbines [W], 4e6
 Rotor diameter [m], 30
 Coeficient of performance, 0.5
 1-Gearbox Efficiency, 0.94

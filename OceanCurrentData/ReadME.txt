@@ -25,8 +25,6 @@ Outputs:
 #.png geo plot showing the CF for the currrent resource
 
 
-
-
 #DATA NOT PROVIDED ON GITHUB:
 #2009.mat> Raw data with current speeds, >2GB. (We don`t have a path for sharing this data yet)
 

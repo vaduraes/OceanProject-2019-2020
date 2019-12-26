@@ -20,10 +20,11 @@ def Speed2Energy(Speed, Turbine):
     Turbine['Availability']
     Turbine['E_Transmission']
     Turbine['Water_rho']
+    Turbine['NumTurbinesPerSet']
     
     Area=np.pi*(Turbine['RotorDiamater']**2)/4
     
-    Energy=0.5*Turbine['C_Performance']*Turbine['Water_rho']*Turbine['Combined_E_Turbine']*Area*Speed**3/Turbine['RatePower']
+    Energy=(0.5*Turbine['C_Performance']*Turbine['Water_rho']*Turbine['Combined_E_Turbine']*Area*Speed**3)*Turbine['NumTurbinesPerSet']/Turbine['RatePower']
     Energy[Energy>1]=1
     
     Energy_pu=Energy*Turbine['Availability']*Turbine['E_Transmission']
@@ -37,6 +38,7 @@ RotorDepth=Turbine["RotorDepth"]
 MinDepth=Turbine["MinDepth"]
 MaxDepth=Turbine["MaxDepth"]
 
+RatedPower=Turbine["RatePower"]
 
 DepthDomain= loadmat('depth_domain.mat')
 SitDepth=DepthDomain["h"]
@@ -101,4 +103,4 @@ LatLong: Latitude,Logitude data\n\
 1/2/2010'
 
 
-np.savez('CurrentEnergyRM4.npz',ReadMe=ReadMe,Energy_pu=Energy_pu,LatLong=LatLong,OceanDateTime=OceanDateTime)
+np.savez('CurrentEnergyRM4.npz',ReadMe=ReadMe,Energy_pu=Energy_pu,RatedPower=RatedPower,LatLong=LatLong,OceanDateTime=OceanDateTime)

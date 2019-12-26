@@ -67,7 +67,7 @@ def WindToEnergy(AdjustedHubHeight, PowerCurve, WindTurbine):
     1) The data is in hourly discretization starting at 1/1/2007 and going up to\
      12/31/2013 23:00'
     
-    np.savez("WindEnergyNREL_"+str(AdjustedHubHeight)+"m_"+WindTurbine+'.npz',ReadMe=ReadMe,WindEnergy=WindEnergy,LatLong=WindData["LatLong"])
+    np.savez("WindEnergyNREL_"+str(AdjustedHubHeight)+"m_"+WindTurbine+'.npz',ReadMe=ReadMe,WindEnergy=WindEnergy, RatedPower=RatedPower, LatLong=WindData["LatLong"])
     
 
 AdjustedHubHeight, RotorDiameter, PowerCurve,RatedPower=Condition_on_TurbineData(WindTurbine, Range_of_WindSpeeds)

@@ -47,4 +47,4 @@ EnergyPu: pu wave energy (Base 300kw) 1 unit per site\n\
 1) The data is in hourly discretization starting at 1/1/2000 and going up to\
  12/31/2009 23:00'
 
-np.savez('WaveEnergyRM3.npz',ReadMe=ReadMe, EnergyPu=EnergyPu, LatLong=LatLong)
+np.savez('WaveEnergyRM3.npz',ReadMe=ReadMe, EnergyPu=EnergyPu,RatedPower=RatedPower, LatLong=LatLong)
