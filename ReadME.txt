@@ -1,4 +1,4 @@
-Optimizing Investments in NC Offshore Renewable Energy
+**Optimizing Investments in NC Offshore Renewable Energy**
 
 Each folder has is own ReadME file with a description of the code implemented.
 
